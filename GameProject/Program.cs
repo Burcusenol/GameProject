@@ -19,6 +19,10 @@ namespace GameProject
             gamerManager.Delete(gamer1);
 
             Game game1 = new Game() { GameId = 10, GameName = "ABC", GamePrice = 200 };
+            GameManager gameManager = new GameManager();
+            gameManager.Add(game1);
+            gameManager.Delete(game1);
+            gameManager.Update(game1);
 
             Campaign campaign1 = new Campaign() { CampaignId = 1, CampaignName = "CBA", CampaignDiscount ="% 50 "};
             CampaignManager campaignManager = new CampaignManager();
